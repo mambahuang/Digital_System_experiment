@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/intelFPGA_lite/18.1/Add_full/simulation/qsim
+vAdd_full
+Z1 !s110 1665481165
+!i10b 1
+!s100 0fKb;909TKEYEWYXS=?8>1
+Il>B=MSNe5V<]i58BU3Z3D2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1665481163
+8Add_full.vo
+FAdd_full.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1665481165.000000
+!s107 Add_full.vo|
+!s90 -work|work|Add_full.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+n@add_full
+vAdd_full_vlg_vec_tst
+R1
+!i10b 1
+!s100 TN1FWmEm0CXKKjGN>2lla0
+I670jl5?U=]0^1YG:OJIW63
+R2
+R0
+w1665481161
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+R4
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R5
+R6
+n@add_full_vlg_vec_tst
