@@ -1,0 +1,15 @@
+module Counter(reset, Up_Down, clk, out);
+
+input reset, Up_Down, clk;
+output [7:0] out;
+
+reg reset, Up_down;
+
+
+@always(posedge clk or negedge reset)
+begin
+	
+	if(!reset)
+	begin
+		if(Up_Down == 1'b0)
+			
