@@ -1,0 +1,118 @@
+|FSM
+clock => clock.IN1
+reset => reset.IN2
+In => In.IN1
+out[0] << SevenDisplay:u_display.out
+out[1] << SevenDisplay:u_display.out
+out[2] << SevenDisplay:u_display.out
+out[3] << SevenDisplay:u_display.out
+out[4] << SevenDisplay:u_display.out
+out[5] << SevenDisplay:u_display.out
+out[6] << SevenDisplay:u_display.out
+
+
+|FSM|FrequencyDivider:u_FreqDiv
+reset => clock_div~reg0.ACLR
+reset => count_t[0].ACLR
+reset => count_t[1].ACLR
+reset => count_t[2].ACLR
+reset => count_t[3].ACLR
+reset => count_t[4].ACLR
+reset => count_t[5].ACLR
+reset => count_t[6].ACLR
+reset => count_t[7].ACLR
+reset => count_t[8].ACLR
+reset => count_t[9].ACLR
+reset => count_t[10].ACLR
+reset => count_t[11].ACLR
+reset => count_t[12].ACLR
+reset => count_t[13].ACLR
+reset => count_t[14].ACLR
+reset => count_t[15].ACLR
+reset => count_t[16].ACLR
+reset => count_t[17].ACLR
+reset => count_t[18].ACLR
+reset => count_t[19].ACLR
+reset => count_t[20].ACLR
+reset => count_t[21].ACLR
+reset => count_t[22].ACLR
+reset => count_t[23].ACLR
+reset => count_t[24].ACLR
+reset => count_t[25].ACLR
+reset => count_t[26].ACLR
+reset => count_t[27].ACLR
+reset => count_t[28].ACLR
+reset => count_t[29].ACLR
+reset => count_t[30].ACLR
+reset => count_t[31].ACLR
+clk => clock_div~reg0.CLK
+clk => count_t[0].CLK
+clk => count_t[1].CLK
+clk => count_t[2].CLK
+clk => count_t[3].CLK
+clk => count_t[4].CLK
+clk => count_t[5].CLK
+clk => count_t[6].CLK
+clk => count_t[7].CLK
+clk => count_t[8].CLK
+clk => count_t[9].CLK
+clk => count_t[10].CLK
+clk => count_t[11].CLK
+clk => count_t[12].CLK
+clk => count_t[13].CLK
+clk => count_t[14].CLK
+clk => count_t[15].CLK
+clk => count_t[16].CLK
+clk => count_t[17].CLK
+clk => count_t[18].CLK
+clk => count_t[19].CLK
+clk => count_t[20].CLK
+clk => count_t[21].CLK
+clk => count_t[22].CLK
+clk => count_t[23].CLK
+clk => count_t[24].CLK
+clk => count_t[25].CLK
+clk => count_t[26].CLK
+clk => count_t[27].CLK
+clk => count_t[28].CLK
+clk => count_t[29].CLK
+clk => count_t[30].CLK
+clk => count_t[31].CLK
+clock_div <= clock_div~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FSM|moore_machine:u_moore_machine
+In => Selector3.IN3
+In => Selector5.IN3
+In => Selector0.IN3
+In => Selector1.IN3
+In => Selector2.IN3
+In => Selector4.IN3
+In => Selector0.IN1
+In => Selector1.IN1
+In => Selector2.IN1
+In => Selector3.IN1
+In => Selector4.IN1
+In => Selector5.IN1
+clock_div => state~1.DATAIN
+reset => state~3.DATAIN
+tmp[0] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+tmp[1] <= tmp.DB_MAX_OUTPUT_PORT_TYPE
+tmp[2] <= tmp.DB_MAX_OUTPUT_PORT_TYPE
+tmp[3] <= <GND>
+
+
+|FSM|SevenDisplay:u_display
+in[0] => Decoder0.IN3
+in[1] => Decoder0.IN2
+in[2] => Decoder0.IN1
+in[3] => Decoder0.IN0
+out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
