@@ -1,0 +1,114 @@
+$comment
+	File created using the following command:
+		vcd file Full_Adder.msim.vcd -direction
+$end
+$date
+	Sun Nov 27 18:15:02 2022
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module Full_Adder_vlg_vec_tst $end
+$var reg 1 ! a $end
+$var reg 1 " b $end
+$var reg 1 # c_in $end
+$var wire 1 $ carry $end
+$var wire 1 % sum $end
+
+$scope module i1 $end
+$var wire 1 & gnd $end
+$var wire 1 ' vcc $end
+$var wire 1 ( unknown $end
+$var tri1 1 ) devclrn $end
+$var tri1 1 * devpor $end
+$var tri1 1 + devoe $end
+$var wire 1 , ~QUARTUS_CREATED_GND~I_combout $end
+$var wire 1 - a~input_o $end
+$var wire 1 . c_in~input_o $end
+$var wire 1 / b~input_o $end
+$var wire 1 0 u_adder2|sum~0_combout $end
+$var wire 1 1 comb~0_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+0#
+0$
+0%
+0&
+1'
+x(
+1)
+1*
+1+
+0,
+0-
+0.
+0/
+00
+01
+$end
+#80000
+1#
+1.
+10
+1%
+#160000
+1"
+0#
+1/
+0.
+#240000
+1#
+1.
+11
+00
+0%
+1$
+#320000
+1!
+0"
+0#
+1-
+0/
+0.
+01
+10
+1%
+0$
+#400000
+1#
+1.
+11
+00
+0%
+1$
+#480000
+1"
+0#
+1/
+0.
+#560000
+1#
+1.
+10
+1%
+#640000
+0!
+0"
+0#
+0-
+0/
+0.
+01
+00
+0%
+0$
+#1000000
