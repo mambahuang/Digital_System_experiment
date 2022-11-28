@@ -1,0 +1,34 @@
+|Full_Adder
+a => a.IN1
+b => b.IN1
+c_in => c_in.IN1
+sum <= Half_adder:u_adder2.sum
+carry <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Full_Adder|Half_adder:u_adder
+a => always0.IN0
+a => always0.IN0
+a => always0.IN0
+a => always0.IN0
+b => always0.IN1
+b => always0.IN1
+b => always0.IN1
+b => always0.IN1
+sum <= sum$latch.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Full_Adder|Half_adder:u_adder2
+a => always0.IN0
+a => always0.IN0
+a => always0.IN0
+a => always0.IN0
+b => always0.IN1
+b => always0.IN1
+b => always0.IN1
+b => always0.IN1
+sum <= sum$latch.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,8 @@
+module sequential_circuit(clock_div, count, out);
+
+input clk, reset, Up_Down;
+
+wire clock_div;
+wire [3:0] count;
+
+output [7:0] out

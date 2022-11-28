@@ -1,0 +1,7 @@
+|Half_adder
+In[0] => Decoder0.IN1
+In[1] => Decoder0.IN0
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
